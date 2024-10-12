@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "leggedgym"
+version = "0.1.0"
+description = ""
+authors = ["Kenji Fukuda <fk.kenji.21@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+torch = {version = "2.4.0+cu121", source = "pytorch_121"}
+torchvision = {version = "0.19.0+cu121", source = "pytorch_121"}
+torchaudio = {version = "2.4.0+cu121", source = "pytorch_121"}
+
+[[tool.poetry.source]]
+name = "pytorch_121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "supplemental"
+
+[[tool.poetry.source]]
+name = "nvidia"
+url = "https://pypi.nvidia.com"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
