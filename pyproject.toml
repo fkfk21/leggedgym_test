@@ -10,6 +10,11 @@ python = ">=3.8,<3.9"
 torch = {version = "2.4.0+cu121", source = "pytorch_121"}
 torchvision = {version = "0.19.0+cu121", source = "pytorch_121"}
 torchaudio = {version = "2.4.0+cu121", source = "pytorch_121"}
+numpy = "<1.20"
+isaacgym = {path = "isaacgym/python", develop = true}
+rsl-rl = {path = "rsl_rl", develop = true}
+legged-gym = {path = "legged_gym", develop = true}
+tensorboard = "<2.17"
 
 [[tool.poetry.source]]
 name = "pytorch_121"
